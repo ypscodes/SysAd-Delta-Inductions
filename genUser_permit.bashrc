@@ -14,7 +14,7 @@ PasswordUpdate()
 UserCreation()
 {
 	username=$1$(printf "%02d" $2)
-	sudo useradd $username -g $3
+	sudo useradd -m $username -g $3
 	PasswordUpdate $username 
 }
 
